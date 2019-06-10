@@ -23,22 +23,5 @@ const mongoConnect = (callback) => {
         throw 'No database found';
     }
 
-//     function(err, client) {
-//         // console.log("Connected successfully to server");
-      
-//         const db = client.db('shop');
-//       })
-//       .then(client => {
-//         console.log('Connected!');
-//         _db = client.db();
-//         callback();
-//     })
-//     .catch(err => {
-//         console.log(err);
-//         throw err;
-//     });
-// };
-
-
  exports.mongoConnect = mongoConnect;
  exports.getDb = getDb;
