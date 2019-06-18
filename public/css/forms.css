@@ -2,11 +2,14 @@
     margin: 1rem 0;
 }
 
+.btn,
 .form-control label,
 .form-control input,
 .form-control textarea {
+    padding: 0;
+    margin: auto;
     display: block;
-    width: 100%;
+    width: 20rem;
     margin-bottom: 0.25rem;
 }
 
@@ -20,4 +23,8 @@
 .form-control input:focus,
 .form-control textarea:focus {
     outline-color: #00695c;
+}
+
+.btn {
+    width: 6rem;
 }
