@@ -28,3 +28,8 @@
 .btn {
     width: 6rem;
 }
+
+.form-control input.invalid,
+.form-control textarea.invalid  {
+    border-color: red;
+}
