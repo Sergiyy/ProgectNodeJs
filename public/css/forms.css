@@ -2,7 +2,7 @@
     margin: 1rem 0;
 }
 
-.btn,
+
 .form-control label,
 .form-control input,
 .form-control textarea {
@@ -23,10 +23,6 @@
 .form-control input:focus,
 .form-control textarea:focus {
     outline-color: #00695c;
-}
-
-.btn {
-    width: 6rem;
 }
 
 .form-control input.invalid,
