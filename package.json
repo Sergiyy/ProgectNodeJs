@@ -3,19 +3,25 @@
   "version": "1.0.0",
   "description": "Complete Node.js Guide",
   "main": "first-app.js",
+  "engines": {
+    "node": "10.15.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon first-app.js",
-    "start-server": "node first-app.js"
+    "start": "cross-env NODE_ENV=production MONGO_USER=sergiymokhurenko MONGO_PASSWORD=Kp.XaKgGKdt3SZ9 MONGO_DEFAULT_DATABASE=shop STRIPE_KEY=sk_test_pQNZLELqNqAUYTK11BW90kwS004DL3zDer node first-app.js",
+    "start-server": "node first-app.js",
+    "start:dev": "nodemon first-app.js"
   },
   "author": "Mokhurenko Sergiy",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "nodemon": "^1.18.10"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
     "connect-flash": "^0.1.1",
     "connect-mongodb-session": "^2.1.1",
     "csurf": "^1.10.0",
@@ -24,8 +30,10 @@
     "express-handlebars": "^3.0.2",
     "express-session": "^1.16.1",
     "express-validator": "^5.3.1",
+    "helmet": "^3.18.0",
     "mongodb": "^3.2.3",
     "mongoose": "^5.6.0",
+    "morgan": "^1.9.1",
     "multer": "^1.4.1",
     "mysql2": "^1.6.5",
     "nodemailer": "^6.2.1",
