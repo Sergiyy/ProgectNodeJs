@@ -41,7 +41,7 @@
     "pdfkit": "^0.10.0",
     "pug": "^2.0.3",
     "readline-sync": "^1.4.9",
-    "sequelize": "^5.2.15",
+    "sequelize": "^5.15.1",
     "stripe": "^7.4.0"
   }
 }
